@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h2>Temperature Converter</h2>
+      <div id="items">
+        <div id="er">
+          <p>Degrees</p>
+          <div id="Tp">
+            <input id="degrees" type="number" />
+            <hr />
+            <select name="temp1" id="temp1">
+              <option value="cel1">℃</option>
+              <option value="fah1">℉</option>
+              <option value="kel1">K</option>
+            </select>
+          </div>
+        </div>
+        <div id="sel">
+          <p>Type</p>
+          <select name="temp" id="temp">
+            <option value="cel">Celsius℃</option>
+            <option value="fah">Fahrenheit℉</option>
+            <option value="kel">Kelvin K</option>
+          </select>
+        </div>
+      </div>
+      <div id="result">
+        <div><p>Result</p></div>
+        <div><input id="RES" type="text" /></div>
+      </div>
+      <div id="buttons">
+        <button onclick="reset()">Clear</button>
+        <button onclick="convert()">Convert</button>
+      </div>
+    </div>
+    <script src="Simple.js"></script>
+  </body>
+</html>
